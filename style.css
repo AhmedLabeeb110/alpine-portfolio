@@ -1,0 +1,71 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=PT+Serif:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #050909;
+    color: #ffff;
+    padding: 18px;
+}
+
+header .logo{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'PT Serif', serif;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+header ul li{
+    padding: 4px 25px 0px 0px;
+    font-size: 15px;
+}
+
+header ul li:hover{
+    color: #C49B65;
+    cursor: pointer;
+}
+
+.hero-section img{
+    width: 100%;
+    overflow: hidden;
+    margin-top: -105px;
+    background-color: rgba(0,0,0,0.4); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2; 
+    position: relative;
+}
+
+.hero-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    color: #ffff;
+    position: relative;
+    bottom: 650px;
+    font-size: 60px;
+    background-color: #4e4e4e28;
+}
+
+.hero-details span{
+    color: #C49B65;
+    position: relative;
+    left: 15px;
+}

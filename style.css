@@ -20,6 +20,7 @@ header .logo {
   font-size: 30px;
   font-weight: 700;
   font-family: "PT Serif", serif;
+  cursor: pointer;
 }
 
 header ul {
@@ -44,12 +45,12 @@ header ul li:hover {
 .hero-section img {
   width: 100%;
   overflow: hidden;
-  margin-top: -105px;
+  margin-top: -30px;
   background-color: rgba(0, 0, 0, 0.4);
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
   position: relative;
+  z-index: -100;
 }
 
 .hero-details,
@@ -93,11 +94,12 @@ header ul li:hover {
 .about-section {
   background-color: #161617;
   width: auto;
-  padding: 200px;
-  margin-top: -250px;
+  padding: 160px 200px 160px 200px;
+  margin-top: -325px;
   display: flex;
   font-family: "Open Sans", sans-serif;
   color: #fff;
+  z-index: 1;
 }
 
 .about-section .about{
@@ -178,12 +180,13 @@ header ul li:hover {
 }
 
 .portfolio h2{
-  font-family: "PT Serif", serif;
-  /* font-family: "Open Sans", sans-serif; */
-  font-weight: 400;
+  /* font-family: "PT Serif", serif; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   font-size: 45px;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 100px;
+  cursor: pointer;
 }
 
 .portfolio-nav{
@@ -193,18 +196,20 @@ header ul li:hover {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 25px;
-  margin: 0 450px 0 450px;
+  margin: 0 500px 0 500px;
   /* text-align: center; */
 }
 
 .portfolio-nav li{
   font-weight: 500;
+  margin-top: 100px;
   padding: 10px;
+  cursor: pointer;
+  border-radius: 18px;
 }
 
 .portfolio-nav li:hover{
    background-color: #c49b65;
    border-radius: 18px;
-   transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-out;
 }

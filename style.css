@@ -102,7 +102,7 @@ header ul li:hover {
   z-index: 1;
 }
 
-.about-section .about{
+.about-section .about {
   /* padding-left: 120px; */
   padding: 20px 0 0 120px;
 }
@@ -114,7 +114,7 @@ header ul li:hover {
   line-height: 60px;
 }
 
-.about-section .about h3{
+.about-section .about h3 {
   font-size: 32px;
   font-weight: 600;
   background-color: #c49b65;
@@ -125,18 +125,18 @@ header ul li:hover {
   letter-spacing: 3px;
 }
 
-.about-section .about h5{
-    margin: 0 0 10px 0;
-    font-size: 16px;
+.about-section .about h5 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
 }
-.about-section .about p{
-    margin: 0 0 0 0;
-    font-size: 14px;
-    line-height: 25px;
-    color: #868686;
+.about-section .about p {
+  margin: 0 0 0 0;
+  font-size: 14px;
+  line-height: 25px;
+  color: #868686;
 }
 
-#cv{
+#cv {
   border: 1px #fff solid;
   border-radius: 25px;
   font-size: 14px;
@@ -146,7 +146,7 @@ header ul li:hover {
   transition: all 0.2s ease-out;
 }
 
-#hire-me{
+#hire-me {
   border: 1px #fff solid;
   border-radius: 25px;
   font-size: 14px;
@@ -156,30 +156,31 @@ header ul li:hover {
   transition: all 0.2s ease-in;
 }
 
-#cv:hover{
+#cv:hover {
   background-color: #c49b65;
   border: 1px #c49b65 solid;
 }
 
-#hire-me:hover{
+#hire-me:hover {
   background-color: #c49b65;
   border: 1px #c49b65 solid;
   color: #fff;
 }
 
-.about-section img{
+.about-section img {
   width: 500px;
   height: 500px;
 }
 
 /* Portfolio */
 
-.portfolio{
-  background-color: #0F0F0F;
+.portfolio {
+  background-color: #0f0f0f;
   color: #fff;
+  padding: 10px;
 }
 
-.portfolio h2{
+.portfolio h2 {
   /* font-family: "PT Serif", serif; */
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -189,7 +190,39 @@ header ul li:hover {
   cursor: pointer;
 }
 
-.portfolio-nav{
+.portfolio h2 span{
+  color: #c49b65;
+}
+
+.portfolio-images{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* margin: auto 50px auto 50px; */
+  padding-top: 50px;
+  }
+
+.portfolio-images img{
+  margin: 15px auto 15px auto;
+  width: 400px;
+  height: 400px;
+  padding: 8px;
+  object-fit: cover;
+  flex-direction: start;
+  transition: 0.5s all ease;
+  border: 1px solid #161617;
+}
+
+.portfolio-images img:hover{
+  transform: scale(1.1);
+  padding: 12px;
+  border: 1px solid #373737;
+  /* This creates blur effect */
+  /* filter: blur(5px); */
+}
+
+/* .portfolio-nav {
   list-style: none;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -197,19 +230,16 @@ header ul li:hover {
   align-items: center;
   justify-content: space-evenly;
   margin: 0 500px 0 500px;
-  /* text-align: center; */
-}
+} */
 
-.portfolio-nav li{
+/* .portfolio-nav li {
   font-weight: 500;
   margin-top: 100px;
-  padding: 10px;
   cursor: pointer;
-  border-radius: 18px;
-}
+  border-bottom: 2px solid #0f0f0f;
+} */
 
-.portfolio-nav li:hover{
-   background-color: #c49b65;
-   border-radius: 18px;
-   transition: all 0.2s ease-out;
-}
+/* .portfolio-nav li:hover {
+  border-bottom: 2px solid #c49b65;
+  margin-top: 100px;
+} */

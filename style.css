@@ -243,3 +243,30 @@ header ul li:hover {
   border-bottom: 2px solid #c49b65;
   margin-top: 100px;
 } */
+
+#contact-section{
+  background-color: #161617;
+}
+
+#contact-section h2{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  padding-top: 80px;
+  color: #fff;
+}
+
+#contact-section h2 span{
+  color: #c49b65;
+}
+
+#contact-section form{
+ display: flex;
+ flex-direction: column;
+ margin: auto 500px auto 500px;
+}
+
+#contact-section form button{
+  padding: 5px ;
+}

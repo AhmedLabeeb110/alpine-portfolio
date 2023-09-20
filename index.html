@@ -17,7 +17,7 @@
     />
     <title>Alpine Portfolio</title>
   </head>
-  <body> 
+  <body>
     <header>
       <div class="logo">Learner</div>
       <ul class="header-items">
@@ -38,31 +38,30 @@
     </div>
 
     <section class="about-section">
+      <img src="/images/about.jpg" alt="abt" id="about-image" />
 
-      <img src="/images/about.jpg" alt="abt" id="about-image">
-
-     <div class="about">
-      <span>WHO AM I </span>
-      <h3>ZAIN BUTLER</h3>
-      <br>
-      <h5>Professional Web Designer</h5>
-      <p>
-        Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque
-        volutpat condimentum velit class aptent taciti sociosqu ad litora
-        torquent metus metus ullamcorper.
-      </p>
-      <br>
-      <p>
-        Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque
-        volutpat condimentum velit class aptent taciti sociosqu ad litora
-        torquent metus metus ullamcorper vel tincidunt sed class aptent taciti
-        sociosqu ad litora torquent type setting industry when per conubia
-        nostra.
-      </p>
-      <br>
-      <button id="cv">Download CV</button>
-      <button id="hire-me">Hire Me!</button>
-    </div>
+      <div class="about">
+        <span>WHO AM I </span>
+        <h3>ZAIN BUTLER</h3>
+        <br />
+        <h5>Professional Web Designer</h5>
+        <p>
+          Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque
+          volutpat condimentum velit class aptent taciti sociosqu ad litora
+          torquent metus metus ullamcorper.
+        </p>
+        <br />
+        <p>
+          Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque
+          volutpat condimentum velit class aptent taciti sociosqu ad litora
+          torquent metus metus ullamcorper vel tincidunt sed class aptent taciti
+          sociosqu ad litora torquent type setting industry when per conubia
+          nostra.
+        </p>
+        <br />
+        <button id="cv">Download CV</button>
+        <button id="hire-me">Hire Me!</button>
+      </div>
     </section>
 
     <section class="portfolio">
@@ -78,24 +77,35 @@
       <br> -->
 
       <div class="portfolio-images">
-      <img src="/images/more/1.jpeg" alt="1">
-      <img src="/images/more/2.jpeg" alt="2">
-      <img src="/images/more/3.jpeg" alt="3">
-      <img src="/images/more/4.jpeg" alt="4">
-      <img src="/images/more/5.jpg" alt="5">
-      <img src="/images/more/6.jpg" alt="6">
-    </div>
-
+        <img src="/images/more/1.jpeg" alt="1" />
+        <img src="/images/more/2.jpeg" alt="2" />
+        <img src="/images/more/3.jpeg" alt="3" />
+        <img src="/images/more/4.jpeg" alt="4" />
+        <img src="/images/more/5.jpg" alt="5" />
+        <img src="/images/more/6.jpg" alt="6" />
+      </div>
     </section>
 
-    <section id="contact-form">
-      <h2>Contact Form</h2>
-      <form>
-        <input type="text" name="fname" placeholder="first name" />
-        <input type="text" name="lname" placeholder="last name" />
-        <input type="email" name="email" placeholder="e-mail" />
-        <input type="text" name="query" placeholder="query" />
-        <button type="submit"></button>
+    <section id="contact-section">
+      <h2>Contact <span>Form</span></h2>
+      <br>
+      <form action="https://formspree.io/f/xyyqnjlg" method="POST">
+        <label>
+          <h3>Name:</h3>
+          <input type="text" name="name" />
+        </label>
+        <br>
+        <label>
+          <h3>E-mail:</h3>
+          <input type="email" name="email" />
+        </label>
+        <br>
+        <label>
+          <h3>Your message:</h3>
+          <textarea name="message"></textarea>
+        </label>
+        <br>
+        <button type="submit">Send</button>
       </form>
     </section>
 

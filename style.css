@@ -264,9 +264,17 @@ header ul li:hover {
 #contact-section form{
  display: flex;
  flex-direction: column;
- margin: auto 500px auto 500px;
+ margin: 50px 500px auto 500px;
 }
 
 #contact-section form button{
-  padding: 5px ;
+  padding: 5px;
+}
+
+#contact-section form h3{
+  color: #8F8F8F;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 5px;
 }

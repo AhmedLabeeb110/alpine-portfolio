@@ -264,17 +264,73 @@ header ul li:hover {
 #contact-section form{
  display: flex;
  flex-direction: column;
- margin: 50px 500px auto 500px;
+ margin: 50px 450px auto 480px;
+}
+
+#contact-section form input{
+  width: 500px;
+  height: 45px;
+  border-radius: 6px;
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #222222;
+  color: #8F8F8F;
 }
 
 #contact-section form button{
   padding: 5px;
+  width: 500px;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 0;
+  font-size: 18px;
+  transition: .2s all ease-out;
+  /* background-color: #222222; */
+  background-color: #c49b65;
+  color: #ffffff;
 }
 
-#contact-section form h3{
-  color: #8F8F8F;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+#contact-section form textarea{
+  width: 500px;
+  height: 150px;
+  border-radius: 6px;
+  padding: 10px;
+  border: 0;
   font-size: 18px;
-  margin-bottom: 5px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #222222;
+  color: #8F8F8F;
+}
+
+#contact-section form textarea:focus, #contact-section form input:focus{
+  color: #c49b65;
+  line-height: 25px;
+  outline: none;
+}
+
+#contact-section form button:hover{
+  background-color: #fff;
+  color: #c49b65;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #010101;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  padding: 50px;
+}
+
+footer ul i{
+  font-size: 28px;
+  padding: 10px;
 }

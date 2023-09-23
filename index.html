@@ -42,7 +42,6 @@
       <div class="hero-details2">I am a <span>Photographer</span></div>
       <i class="fa-solid fa-arrow-down-long"></i>
     </div>
-
     <section class="about-section">
       <img
         src="/alpine-portfolio/images/about.jpg"
@@ -86,13 +85,29 @@
       <br>
       <br> -->
 
-      <div class="portfolio-images">
-        <img src="/alpine-portfolio/images/more/1.jpeg" alt="1" />
-        <img src="/alpine-portfolio/images/more/2.jpeg" alt="2" />
-        <img src="/alpine-portfolio/images/more/3.jpeg" alt="3" />
-        <img src="/alpine-portfolio/images/more/4.jpeg" alt="4" />
-        <img src="/alpine-portfolio/images/more/5.jpg" alt="5" />
-        <img src="/alpine-portfolio/images/more/6.jpg" alt="6" />
+      <div
+        class="portfolio-images"
+
+        x-data="{ 
+        db: 'https://my-json-server.typicode.com/ahmedLabeeb110/pf-db/posts',
+        allImages: [],
+        getImages() {
+          fetch(this.db)
+            .then(response => response.json())
+            .then(results => {
+              this.allImages = results;
+              console.log(results);
+            });
+        }
+      }"
+      >
+
+
+      <template x-for="pic in allImages" :key="pic.id" x-init="getImages()">
+        <img :src="pic.image"/>
+        <h1 x-text="pic.title"></h1>
+      </template>
+
       </div>
     </section>
 

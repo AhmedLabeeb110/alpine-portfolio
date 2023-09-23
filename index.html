@@ -3,22 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"
-    ></script>
+    <link rel="stylesheet" href="/alpine-portfolio/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      referrerpoli`cy="no-referrer"
     />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"
+    ></script>
     <title>Alpine Portfolio</title>
   </head>
   <body>
-    <header>
+    <header
+      x-data="{ 
+      scroll: true
+     }"
+      x-on:scroll.window="scroll = window.pageYOffset"
+      :class="{ 'sticky-nav' : scroll ? (window.pageYOffset > 100) : false}"
+    >
       <div class="logo">Learner</div>
       <ul class="header-items">
         <li>Home</li>
@@ -31,14 +37,18 @@
     </header>
 
     <div class="hero-section">
-      <img src="/images/hero.jpg" alt="hero-image" />
+      <img src="/alpine-portfolio/images/hero.jpg" alt="hero-image" />
       <div class="hero-details">Welcome!</div>
       <div class="hero-details2">I am a <span>Photographer</span></div>
       <i class="fa-solid fa-arrow-down-long"></i>
     </div>
 
     <section class="about-section">
-      <img src="/images/about.jpg" alt="abt" id="about-image" />
+      <img
+        src="/alpine-portfolio/images/about.jpg"
+        alt="abt"
+        id="about-image"
+      />
 
       <div class="about">
         <span>WHO AM I </span>
@@ -77,12 +87,12 @@
       <br> -->
 
       <div class="portfolio-images">
-        <img src="/images/more/1.jpeg" alt="1" />
-        <img src="/images/more/2.jpeg" alt="2" />
-        <img src="/images/more/3.jpeg" alt="3" />
-        <img src="/images/more/4.jpeg" alt="4" />
-        <img src="/images/more/5.jpg" alt="5" />
-        <img src="/images/more/6.jpg" alt="6" />
+        <img src="/alpine-portfolio/images/more/1.jpeg" alt="1" />
+        <img src="/alpine-portfolio/images/more/2.jpeg" alt="2" />
+        <img src="/alpine-portfolio/images/more/3.jpeg" alt="3" />
+        <img src="/alpine-portfolio/images/more/4.jpeg" alt="4" />
+        <img src="/alpine-portfolio/images/more/5.jpg" alt="5" />
+        <img src="/alpine-portfolio/images/more/6.jpg" alt="6" />
       </div>
     </section>
 
@@ -117,5 +127,13 @@
         <i class="fa-brands fa-twitter"></i>
       </ul>
     </footer>
+    <!-- <div x-data="{ scroll: 0 }" x-on:scroll.window="scroll = window.pageYOffset">
+      Scroll Position: <span x-text="scroll"></span>
+  </div> 
+
+  <div x-data="{ scroll: 0 }" x-on:scroll.window="scroll = window.pageYOffset">
+    Scroll Position: <span x-text="scroll"></span>
+</div>
+-->
   </body>
 </html>

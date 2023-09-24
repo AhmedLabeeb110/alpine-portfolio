@@ -347,27 +347,24 @@ footer ul i{
     width: 100%;
   }
   .hero-details, .hero-details2{
-    bottom: 500px;
+    bottom: 250px;
+    font-size: 40px;
   }
   .hero-section img {
-    width: 100%;
-    overflow: hidden;
     margin-top: -30px;
-    margin-bottom: 100px;
+    margin-bottom: -80px;
   }
   .fa-arrow-down-long {
-    position: relative;
-    left: 400px;
+    left: 360px;
     right: 400px;
     bottom: 400px;
+    top: -180px;
     text-align: center;
+    font-size: 20px;
   }
 
   .about-section {
-   
-    padding: 160px 200px 160px 200px;
-    margin-top: -325px;
-
+    margin-top: -105px;
   }
   
   .about-section .about {
@@ -375,22 +372,6 @@ footer ul i{
     margin: -50px auto -50px auto;
   }
   
-  
-  .about-section .about h3 {
-  
-    width: 250px;
-    margin-top: 2px;
-    padding: 3px 3px 3px 8px;
-  }
-  
-  .about-section .about h5 {
-    margin: 0 0 10px 0;
-
-  }
-  .about-section .about p {
-    margin: 0 0 0 0;
-
-  }
   .about-section img {
     width: 350px;
     height: 350px;
@@ -406,14 +387,6 @@ footer ul i{
     width: 330px;
     height: 330px;
   }
-  
-  .portfolio-images img:hover{
-    transform: scale(1.1);
-    padding: 12px;
-    border: 1px solid #373737;
-    /* This creates blur effect */
-    /* filter: blur(5px); */
-  }
 
   #contact-section form{
     margin: 50px 50px 50px 150px;
@@ -427,6 +400,11 @@ footer ul i{
   .about{
     padding: auto; 
   }
+
+  .about-section{
+    margin-top: -370px;
+  }
+
   .about-section img{
     width: 250px;
     height: 250px;
@@ -436,4 +414,21 @@ footer ul i{
     /* padding: 50px; */
     margin: 250px -150px -50px -200px;
   }
+
+  .portfolio h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .portfolio-images img{
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+  }
+  .portfolio-images img:hover{
+    transform: scale(1);
+    padding: 12px;
+    border: 1px solid #373737;
+  }
+
 }

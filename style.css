@@ -23,24 +23,24 @@ header .logo {
   cursor: pointer;
 }
 
-  header ul {
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
-  }
+header ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
 
-  header ul li {
-    padding: 4px 25px 0px 0px;
-    font-size: 15px;
-  }
+header ul li {
+  padding: 4px 25px 0px 0px;
+  font-size: 15px;
+}
 
 header ul li:hover {
   color: #c49b65;
   cursor: pointer;
 }
 
-.sticky-nav{
+.sticky-nav {
   position: fixed;
   width: 100%;
   z-index: 150;
@@ -197,20 +197,20 @@ header ul li:hover {
   cursor: pointer;
 }
 
-.portfolio h2 span{
+.portfolio h2 span {
   color: #c49b65;
 }
 
-.portfolio-images{
+.portfolio-images {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
   /* margin: auto 50px auto 50px; */
   padding-top: 50px;
-  }
+}
 
-.portfolio-images img{
+.portfolio-images img {
   margin: 15px auto 15px auto;
   width: 400px;
   height: 400px;
@@ -221,7 +221,7 @@ header ul li:hover {
   border: 1px solid #161617;
 }
 
-.portfolio-images img:hover{
+.portfolio-images img:hover {
   transform: scale(1.1);
   padding: 12px;
   border: 1px solid #373737;
@@ -251,11 +251,11 @@ header ul li:hover {
   margin-top: 100px;
 } */
 
-#contact-section{
+#contact-section {
   background-color: #161617;
 }
 
-#contact-section h2{
+#contact-section h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
@@ -264,17 +264,17 @@ header ul li:hover {
   color: #fff;
 }
 
-#contact-section h2 span{
+#contact-section h2 span {
   color: #c49b65;
 }
 
-#contact-section form{
- display: flex;
- flex-direction: column;
- margin: 50px 450px auto 480px;
+#contact-section form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 450px auto 480px;
 }
 
-#contact-section form input{
+#contact-section form input {
   width: 500px;
   height: 45px;
   border-radius: 6px;
@@ -283,10 +283,10 @@ header ul li:hover {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   background-color: #222222;
-  color: #8F8F8F;
+  color: #8f8f8f;
 }
 
-#contact-section form button{
+#contact-section form button {
   padding: 5px;
   width: 500px;
   height: 45px;
@@ -294,13 +294,13 @@ header ul li:hover {
   border-radius: 6px;
   border: 0;
   font-size: 18px;
-  transition: .2s all ease-out;
+  transition: 0.2s all ease-out;
   /* background-color: #222222; */
   background-color: #c49b65;
   color: #ffffff;
 }
 
-#contact-section form textarea{
+#contact-section form textarea {
   width: 500px;
   height: 150px;
   border-radius: 6px;
@@ -309,21 +309,22 @@ header ul li:hover {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   background-color: #222222;
-  color: #8F8F8F;
+  color: #8f8f8f;
 }
 
-#contact-section form textarea:focus, #contact-section form input:focus{
+#contact-section form textarea:focus,
+#contact-section form input:focus {
   color: #c49b65;
   line-height: 25px;
   outline: none;
 }
 
-#contact-section form button:hover{
+#contact-section form button:hover {
   background-color: #fff;
   color: #c49b65;
 }
 
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -337,16 +338,21 @@ footer{
   padding: 50px;
 }
 
-footer ul i{
+footer ul i {
   font-size: 28px;
   padding: 10px;
 }
 
+.mobile-hero{
+  display: none;
+}
+
 @media (min-width: 766px) and (max-width: 1020px) {
-  header{
+  header {
     width: 100%;
   }
-  .hero-details, .hero-details2{
+  .hero-details,
+  .hero-details2 {
     bottom: 250px;
     font-size: 40px;
   }
@@ -366,12 +372,12 @@ footer ul i{
   .about-section {
     margin-top: -105px;
   }
-  
+
   .about-section .about {
     padding: 50px;
     margin: -50px auto -50px auto;
   }
-  
+
   .about-section img {
     width: 350px;
     height: 350px;
@@ -379,23 +385,25 @@ footer ul i{
     margin-top: 35px;
   }
 
-  .about button{
+  .about button {
     margin-top: 10px;
   }
 
-  .portfolio-images img{
+  .portfolio-images img {
     width: 330px;
     height: 330px;
   }
 
-  #contact-section form{
+  #contact-section form {
     margin: 50px 50px 50px 150px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
-  header{
+  header {
     width: 100%;
+    border-bottom: .1px solid #373737;
+
   }
 
   header .logo {
@@ -403,28 +411,44 @@ footer ul i{
     cursor: pointer;
     margin-left: -100px;
   }
-  
+
   header ul li {
     font-size: 10px;
     display: none;
   }
 
-
-  .hero-details,
-  .hero-details2{
-    
-  }
-
-  .hero-section img{
+  .hero-section {
     display: none;
   }
 
-  .fa-arrow-down-long{
-    display: none;
+  .mobile-hero {
+    padding: 80px;
+    display: block;
+    background-color: #050909;
   }
 
-   .about-section, .portfolio, #contact-section, footer{
-    display: none;
+  .mobile-hero .hero-details3,
+  .mobile-hero .hero-details4 {
+    color: #ffff;
+    font-size: 25px;
+    text-align: center;
+    background-color: transparent;
+    padding: 5px;
   }
 
+  .mobile-hero .fa-arrow-down {
+    text-align: center;
+    margin: 10px 100px 10px 180px;
+  }
+
+  .hero-details4 span {
+    color: #c49b65;
+  }
+
+  .about-section,
+  .portfolio,
+  #contact-section,
+  footer {
+    display: none;
+  }
 }

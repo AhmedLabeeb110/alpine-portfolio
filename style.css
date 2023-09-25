@@ -23,17 +23,17 @@ header .logo {
   cursor: pointer;
 }
 
-header ul {
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-}
+  header ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+  }
 
-header ul li {
-  padding: 4px 25px 0px 0px;
-  font-size: 15px;
-}
+  header ul li {
+    padding: 4px 25px 0px 0px;
+    font-size: 15px;
+  }
 
 header ul li:hover {
   color: #c49b65;
@@ -395,10 +395,35 @@ footer ul i{
 
 @media (min-width: 320px) and (max-width: 425px) {
   header{
-    width: 200%;
+    width: 100%;
   }
 
-  .hero-section, .about-section, .portfolio, #contact-section, footer{
+  header .logo {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: -100px;
+  }
+  
+  header ul li {
+    font-size: 10px;
+    display: none;
+  }
+
+
+  .hero-details,
+  .hero-details2{
+    
+  }
+
+  .hero-section img{
+    display: none;
+  }
+
+  .fa-arrow-down-long{
+    display: none;
+  }
+
+   .about-section, .portfolio, #contact-section, footer{
     display: none;
   }
 

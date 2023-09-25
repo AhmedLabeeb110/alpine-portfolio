@@ -100,7 +100,7 @@ header ul li:hover {
 
 .about-section {
   background-color: #161617;
-  width: auto;
+  width: 100%;
   padding: 160px 200px 160px 200px;
   margin-top: -325px;
   display: flex;
@@ -397,38 +397,90 @@ footer ul i{
   header{
     display: none;
   }
-  .about{
-    padding: auto; 
+
+  .hero-section{
+    width: 100%;
   }
+
+  .hero-section img {
+    width: 200%;
+    overflow: hidden;
+    margin: -30px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -100;
+  }
+
+  .hero-details,
+  .hero-details2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    color: #ffff;
+    position: relative;
+    bottom: 50px;
+    font-size: 60px;
+    background-color: #4e4e4e28;
+  }
+
+  .fa-arrow-down-long {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding: 15px;
+    z-index: 100;
+  }
+/*   
+  .hero-details,
+  .hero-details2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    color: #ffff;
+    position: relative;
+    bottom: 650px;
+    font-size: 60px;
+    background-color: #4e4e4e28;
+  }
+  
+  .hero-details2 span {
+    color: #c49b65;
+    position: relative;
+    left: 15px;
+  }
+  
+  .hero-details2 {
+    padding: 0 0 10px 0;
+  }
+  
+  .fa-arrow-down-long {
+    color: #ffffff;
+    font-size: 30px;
+    position: relative;
+    left: 700px;
+    right: 700px;
+    bottom: 500px;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding: 15px;
+    z-index: 100;
+  } */
+  
 
   .about-section{
-    margin-top: -370px;
+    margin: -370px auto auto auto;
+    display: none;
   }
 
-  .about-section img{
-    width: 250px;
-    height: 250px;
-    margin: -60px -150px auto -100px;
-  }
-  .about-section .about {
-    /* padding: 50px; */
-    margin: 250px -150px -50px -200px;
-  }
-
-  .portfolio h2 {
-    font-size: 38px;
-    text-align: center;
-  }
-
-  .portfolio-images img{
-    width: 300px;
-    height: 300px;
-    padding: 8px;
-  }
-  .portfolio-images img:hover{
-    transform: scale(1);
-    padding: 12px;
-    border: 1px solid #373737;
+  .portfolio, footer, #contact-section{
+    display: none;
   }
 
 }

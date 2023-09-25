@@ -398,44 +398,7 @@ footer ul i{
     width: 200%;
   }
 
-  .hero-section{
-    width: 100%;
-  }
-
-  .hero-section img {
-    width: 200%;
-    margin: -30px 0 0 0;
-  }
-
-  .hero-details,
-  .hero-details2 {
-    position: relative;
-    top: -300px;
-    left: 180px;
-    bottom: auto;
-    font-size: 45px;
-    background-color: transparent;
-  }
-
-  .fa-arrow-down-long {
-    position: relative;
-    left: 350px;
-    right: 150px;
-    bottom: 250px;
-  }
-
-  .hero-details2 span {
-    color: #c49b65;
-    position: relative;
-    left: 15px;
-  }
-  
-  .about-section{
-    margin: -370px auto auto auto;
-    display: none;
-  }
-
-  .portfolio, footer, #contact-section{
+  .hero-section, .about-section, .portfolio, #contact-section, footer{
     display: none;
   }
 

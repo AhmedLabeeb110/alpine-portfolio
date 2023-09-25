@@ -47,6 +47,10 @@ header ul li:hover {
   background-color: #000;
 }
 
+header .fa-bars{
+  display: none;
+}
+
 /* Hero Section */
 
 .hero-section img {
@@ -409,12 +413,17 @@ footer ul i {
   header .logo {
     font-size: 20px;
     cursor: pointer;
-    margin-left: -100px;
+    margin-left: -60px;
   }
 
   header ul li {
     font-size: 10px;
     display: none;
+  }
+
+  header .fa-bars{
+    display: block;
+    margin-right: -60px;
   }
 
   .hero-section {

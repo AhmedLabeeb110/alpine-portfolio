@@ -6,6 +6,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Make all the CSS transitions smooth */
+html {
+  scroll-behavior: smooth;
+}
+
 
 header {
   display: flex;

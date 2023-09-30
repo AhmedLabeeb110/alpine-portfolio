@@ -348,7 +348,9 @@ footer ul i {
   padding: 10px;
 }
 
-.mobile-hero, .about-section-mob, .about-mob {
+.mobile-hero,
+.about-section-mob,
+.about-mob {
   display: none;
 }
 
@@ -470,7 +472,7 @@ footer ul i {
     max-width: 60%;
   }
 
-  .about-section-mob-pt{
+  .about-section-mob-pt {
     color: #ffff;
     background-color: #161617;
     font-family: "Open Sans", sans-serif;
@@ -478,13 +480,13 @@ footer ul i {
     text-align: center;
   }
 
-  .about-mob{
+  .about-mob {
     display: block;
     color: #fff;
     font-family: "Open Sans", sans-serif;
   }
 
-  .about-mob h3{
+  .about-mob h3 {
     font-size: 24px;
     font-weight: 600;
     background-color: #c49b65;
@@ -494,20 +496,42 @@ footer ul i {
     display: inline-block;
   }
 
-  .about-mob h5{
+  .about-mob h5 {
     font-size: 14px;
     font-weight: 300;
     padding: 10px 0 50px 0;
   }
 
-  .about-mob p{
+  .about-mob p {
     font-size: 12px !important;
     font-weight: 300;
   }
 
+  #cv-mob {
+    padding: 5px 15px 5px 15px;
+    font-size: 15px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: #161617;
+  }
+  #hire-me-mob {
+    padding: 5px 15px 5px 15px;
+    font-size: 15px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: #161617;
+  }
+
+  #cv-mob:hover, #hire-me-mob:hover:hover {
+    background-color: #c49b65;
+    border: 1px #c49b65 solid;
+    color: #fff;
+  }
+
   .about-section,
   .portfolio,
-  .hero-section, 
+  .hero-section,
+  .about-mob span,
   #contact-section,
   footer {
     display: none;

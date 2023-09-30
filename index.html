@@ -89,7 +89,6 @@
 
       <div
         class="portfolio-images"
-
         x-data="{ 
         db: 'https://my-json-server.typicode.com/ahmedLabeeb110/pf-db/posts',
         allImages: [],
@@ -103,12 +102,9 @@
         }
       }"
       >
-
-
-      <template x-for="pic in allImages" :key="pic.id" x-init="getImages()">
-        <img :src="pic.image"/>
-      </template>
-
+        <template x-for="pic in allImages" :key="pic.id" x-init="getImages()">
+          <img :src="pic.image" />
+        </template>
       </div>
     </section>
 
@@ -152,11 +148,23 @@
 </div>
 -->
 
-<!-- Hero section for mobile devices -->
-  <div class="mobile-hero">
-    <div class="hero-details3">Welcome!</div>
-    <div class="hero-details4">I am a <span>Photographer</span></div>
-    <i class="fa fa-arrow-down" aria-hidden="true"></i>
-  </div>
+    <!-- mobile devices -->
+    <div class="mobile-hero">
+      <div class="hero-details3">Welcome!</div>
+      <div class="hero-details4">I am a <span>Photographer</span></div>
+      <div class="arrow-btn-mobile">
+        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <section class="about-section-mob">
+      <img
+        src="/alpine-portfolio/images/about.jpg"
+        alt="abt"
+        id="about-image-mob"
+      />
+
+      </div>
+    </section>
   </body>
 </html>

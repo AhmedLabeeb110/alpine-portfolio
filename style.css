@@ -47,7 +47,7 @@ header ul li:hover {
   background-color: #000;
 }
 
-header .fa-bars{
+header .fa-bars {
   display: none;
 }
 
@@ -348,7 +348,7 @@ footer ul i {
   padding: 10px;
 }
 
-.mobile-hero{
+.mobile-hero {
   display: none;
 }
 
@@ -407,8 +407,7 @@ footer ul i {
 @media (min-width: 320px) and (max-width: 425px) {
   header {
     width: 100%;
-    border-bottom: .1px solid #373737;
-
+    border-bottom: 0.1px solid #373737;
   }
 
   header .logo {
@@ -422,7 +421,7 @@ footer ul i {
     display: none;
   }
 
-  header .fa-bars{
+  header .fa-bars {
     display: block;
     margin-right: -60px;
   }
@@ -440,19 +439,39 @@ footer ul i {
   .mobile-hero .hero-details3,
   .mobile-hero .hero-details4 {
     color: #ffff;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     background-color: transparent;
     padding: 5px;
   }
 
-  .mobile-hero .fa-arrow-down {
+  .mobile-hero .arrow-btn-mobile {
     text-align: center;
-    margin: 10px 100px 10px 180px;
+  }
+
+  .mobile-hero .fa-arrow-down {
+    color: #fff;
+    font-size: 15px;
+    border-radius: 35px;
+    margin-top: 35px;
+    border: 1px solid #fff;
+    padding: 12px 10px 12px 10px;
   }
 
   .hero-details4 span {
     color: #c49b65;
+  }
+
+  .about-section-mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161617;
+  }
+
+  .about-section-mob img {
+    margin-top: 50px;
+    max-width: 50%;
   }
 
   .about-section,

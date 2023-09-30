@@ -188,5 +188,27 @@
         <button id="hire-me-mob">Hire Me!</button>
       </div>
     </section>
+    <section class="portfolio-mob">
+      <h2>Portfolio <span>Shots!</span></h2>
+      <div
+        class="portfolio-images-mob"
+        x-data="{ 
+        db: 'https://my-json-server.typicode.com/ahmedLabeeb110/pf-db/posts',
+        allImages: [],
+        getImages() {
+          fetch(this.db)
+            .then(response => response.json())
+            .then(results => {
+              this.allImages = results;
+              console.log(results);
+            });
+        }
+      }"
+      >
+        <template x-for="pic in allImages" :key="pic.id" x-init="getImages()">
+          <img :src="pic.image" />
+        </template>
+      </div>
+    </section>
   </body>
 </html>

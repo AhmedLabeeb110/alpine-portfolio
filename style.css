@@ -350,7 +350,8 @@ footer ul i {
 
 .mobile-hero,
 .about-section-mob,
-.about-mob {
+.about-mob,
+.portfolio-mob {
   display: none;
 }
 
@@ -507,14 +508,7 @@ footer ul i {
     font-weight: 300;
   }
 
-  #cv-mob {
-    padding: 5px 15px 5px 15px;
-    font-size: 15px;
-    border: 1px solid transparent;
-    border-radius: 15px;
-    color: #161617;
-  }
-  #hire-me-mob {
+  #cv-mob, #hire-me-mob {
     padding: 5px 15px 5px 15px;
     font-size: 15px;
     border: 1px solid transparent;
@@ -527,6 +521,50 @@ footer ul i {
     border: 1px #c49b65 solid;
     color: #fff;
   }
+
+  .portfolio-mob{
+    display: block;
+    background-color: #0F0F0F;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .portfolio-mob h2{
+    padding-top: 50px;
+    text-align: center;
+    color: #fff;
+  }
+  .portfolio-mob h2 span{
+    color: #c49b65;
+  }
+
+  .portfolio-images-mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* margin: auto 50px auto 50px; */
+    padding-top: 50px;
+  }
+  
+  .portfolio-images-mob img {
+    margin: 15px auto 15px auto;
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    object-fit: cover;
+    flex-direction: start;
+    transition: 0.5s all ease;
+    border: 1px solid #161617;
+  }
+  
+  .portfolio-images-mob img:hover {
+    transform: scale(1.1);
+    padding: 12px;
+    border: 1px solid #373737;
+    /* This creates blur effect */
+    /* filter: blur(5px); */
+  }
+  
 
   .about-section,
   .portfolio,

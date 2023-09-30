@@ -348,7 +348,7 @@ footer ul i {
   padding: 10px;
 }
 
-.mobile-hero {
+.mobile-hero, .about-section-mob, .about-mob {
   display: none;
 }
 
@@ -426,10 +426,6 @@ footer ul i {
     margin-right: -60px;
   }
 
-  .hero-section {
-    display: none;
-  }
-
   .mobile-hero {
     padding: 80px;
     display: block;
@@ -470,12 +466,48 @@ footer ul i {
   }
 
   .about-section-mob img {
-    margin-top: 50px;
-    max-width: 50%;
+    margin: 50px auto 50px auto;
+    max-width: 60%;
+  }
+
+  .about-section-mob-pt{
+    color: #ffff;
+    background-color: #161617;
+    font-family: "Open Sans", sans-serif;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .about-mob{
+    display: block;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .about-mob h3{
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #c49b65;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    width: 200px;
+    display: inline-block;
+  }
+
+  .about-mob h5{
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 0 50px 0;
+  }
+
+  .about-mob p{
+    font-size: 12px !important;
+    font-weight: 300;
   }
 
   .about-section,
   .portfolio,
+  .hero-section, 
   #contact-section,
   footer {
     display: none;

@@ -353,10 +353,13 @@ footer ul i {
   padding: 10px;
 }
 
+
 .mobile-hero,
 .about-section-mob,
 .about-mob,
-.portfolio-mob {
+.mob-footer,
+.portfolio-mob,
+#contact-section-mob {
   display: none;
 }
 
@@ -569,7 +572,100 @@ footer ul i {
     /* This creates blur effect */
     /* filter: blur(5px); */
   }
+
+  #contact-section-mob {
+    background-color: #161617;
+  }
   
+  #contact-section-mob h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+  }
+  
+  #contact-section-mob h2 span {
+    color: #c49b65;
+  }
+  
+  #contact-section-mob form {
+    text-align: center;
+  }
+  
+  #contact-section-mob form input {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #222222;
+    color: #8f8f8f;
+  }
+  
+  #contact-section-mob form button {
+    margin-top: 15px;
+    padding: 5px;
+    width: 300px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 18px;
+    transition: 0.2s all ease-out;
+    /* background-color: #222222; */
+    background-color: #c49b65;
+    color: #ffffff;
+  }
+  
+  #contact-section-mob form textarea {
+    margin-top: 15px;
+    width: 300px;
+    height: 150px;
+    border-radius: 6px;
+    padding: 10px;
+    border: 0;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #222222;
+    color: #8f8f8f;
+  }
+  
+  #contact-section-mob form textarea:focus,
+  #contact-section-mob form input:focus {
+    color: #c49b65;
+    line-height: 25px;
+    outline: none;
+  }
+  
+  #contact-section-mob form button:hover {
+    background-color: #fff;
+    color: #c49b65;
+  }
+
+  .mob-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #010101;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .mob-footer ul li{
+    font-size: 28px;
+    padding: 10px;
+  }
 
   .about-section,
   .portfolio,

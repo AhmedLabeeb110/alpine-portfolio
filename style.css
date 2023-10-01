@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Make all the CSS transitions smooth */
+/* Make all the CSS scroll transitions smooth */
 html {
   scroll-behavior: smooth;
 }

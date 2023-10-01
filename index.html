@@ -27,7 +27,7 @@
     >
       <div class="logo">Learner</div>
       <ul class="header-items">
-        <li><a href="#test">About</a></li>
+        <li>About</li>
         <li>Services</li>
         <li>Portfolio</li>
         <li>Blog</li>
@@ -74,7 +74,7 @@
       </div>
     </section>
 
-    <section class="portfolio" id="test">
+    <section class="portfolio">
       <h2>Portfolio <span>Shots!</span></h2>
       <!-- <ul class="portfolio-nav">
         <li>ALL</li>
@@ -208,6 +208,37 @@
           <img :src="pic.image" />
         </template>
       </div>
+    </section>
+    <section id="contact-section-mob">
+      <h2>Contact <span>Form</span></h2>
+      <br />
+      <form action="https://formspree.io/f/xyyqnjlg" method="POST">
+        <label>
+          <input type="text" name="name" placeholder="Name" />
+        </label>
+        <br />
+        <label>
+          <input type="email" name="email" placeholder="E-mail" />
+        </label>
+        <br />
+        <label>
+          <textarea name="message" placeholder="Message"></textarea>
+        </label>
+        <br />
+        <button type="submit">Send</button>
+      </form>
+      <br />
+      <br />
+    </section>
+    <section class="mob-footer">
+      <h3>Learner</h3>
+      <h5>© 2018 UI-THEMEZ. ALL RIGHTS RESERVED.</h5>
+      <ul>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </ul>
     </section>
   </body>
 </html>

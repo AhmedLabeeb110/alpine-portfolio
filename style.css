@@ -575,6 +575,7 @@ footer ul i {
 
   #contact-section-mob {
     background-color: #161617;
+    display: block;
   }
   
   #contact-section-mob h2 {

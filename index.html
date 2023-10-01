@@ -33,9 +33,22 @@
         <li>Blog</li>
         <li>Contact</li>
       </ul>
-
-      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-bars" x-on:click="$dispatch('open-nav')"></i>
     </header>
+
+    <div class="menu-mob" 
+         x-data="{ open: false }"
+         x-show="open"
+         x-on:open-nav.window="open = ! open"
+    >
+      <ul class="menu-items">
+        <li>About</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </div>
 
     <div class="hero-section">
       <img src="/alpine-portfolio/images/hero.jpg" alt="hero-image" />

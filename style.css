@@ -80,6 +80,7 @@ header .fa-bars {
   bottom: 650px;
   font-size: 60px;
   background-color: #4e4e4e28;
+  font-family: "PT Serif", serif;
 }
 
 .hero-details2 span {
@@ -353,7 +354,7 @@ footer ul i {
   padding: 10px;
 }
 
-
+.menu-mob,
 .mobile-hero,
 .about-section-mob,
 .about-mob,
@@ -435,6 +436,7 @@ footer ul i {
   header .fa-bars {
     display: block;
     margin-right: -60px;
+    /* pointer-events: none; */
   }
 
   .mobile-hero {
@@ -668,6 +670,29 @@ footer ul i {
     padding: 10px;
   }
 
+  .menu-mob{
+    display: block;
+    color: #fff;
+    background-color: #161617;
+  }
+
+  .menu-mob .menu-items{
+    text-align: center;
+    text-decoration: none;
+    list-style:none;
+    padding: 14px;
+  }
+
+  .menu-mob .menu-items li{
+    padding-top: 12px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .menu-items li:hover{
+    color: #c49b65;
+    cursor: pointer;
+  }
+  
   .about-section,
   .portfolio,
   .hero-section,

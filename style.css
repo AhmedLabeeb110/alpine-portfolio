@@ -341,7 +341,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   color: #ffffff;
-  background-color: #010101;
+  background-color: #0F0F0F;
   line-height: 50px;
   font-size: 20px;
   font-weight: 400;
@@ -352,6 +352,10 @@ footer {
 footer ul i {
   font-size: 28px;
   padding: 10px;
+}
+
+a{
+  text-decoration: none;
 }
 
 .menu-mob,
@@ -562,7 +566,7 @@ footer ul i {
     height: 300px;
     padding: 8px;
     object-fit: cover;
-    flex-direction: start;
+    /* flex-direction: start; */
     transition: 0.5s all ease;
     border: 1px solid #161617;
   }
@@ -700,5 +704,33 @@ footer ul i {
   #contact-section,
   footer {
     display: none;
+  }
+}
+
+/* desktop view */
+
+@media (min-width: 1800px) {
+  .hero-details,
+  .hero-details2 {
+    position: relative;
+    bottom: 850px;
+    font-size: 60px;
+    background-color: #4e4e4e28;
+    font-family: "PT Serif", serif;
+  }
+
+  .fa-arrow-down-long {
+    position: relative;
+    left: 900px;
+    right: 900px;
+    bottom: 750px;
+  }
+
+  .about-section{
+    padding: 160px 350px 160px 350px;
+  }
+
+  .portfolio-images {
+    margin: auto 250px auto 250px;
   }
 }

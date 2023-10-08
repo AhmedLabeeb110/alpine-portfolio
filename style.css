@@ -696,6 +696,14 @@ a{
     color: #c49b65;
     cursor: pointer;
   }
+
+  .sticky-nav-mob {
+    position: fixed;
+    z-index: 150;
+    margin-top: 55px;
+    width: 100%;
+    border-bottom: 0.1px solid #373737;
+  }
   
   .about-section,
   .portfolio,
